@@ -36,6 +36,7 @@ public class Usuario {
         this.editadoEn = editadoEn;
     }
 
+
     public int getIdUsuario() {
         return idUsuario;
     }

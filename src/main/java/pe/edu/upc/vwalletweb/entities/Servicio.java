@@ -14,7 +14,7 @@ public class Servicio {
     @Column(name = "estado",nullable = false,length = 20)
     private String estado;
 
-    //probando la rama de cesar 
+
 
     public Servicio() {
     }
