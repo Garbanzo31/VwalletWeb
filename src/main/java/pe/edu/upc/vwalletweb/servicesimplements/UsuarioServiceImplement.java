@@ -24,4 +24,19 @@ public class UsuarioServiceImplement implements IUsuarioService {
     public List<Usuario> list() {
         return iR.findAll();
     }
+
+    @Override
+    public void delete(int id) {
+        iR.deleteById(id);
+    }
+
+    @Override
+    public Usuario listId(int id) {
+        return iR.findById(id).orElse(new Usuario());
+    }
+
+    @Override
+    public List<Usuario> findAllByCorreo(String correo) {
+        return iR.findAllByCorreo(correo);
+    }
 }

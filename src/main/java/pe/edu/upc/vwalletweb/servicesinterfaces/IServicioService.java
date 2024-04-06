@@ -9,5 +9,10 @@ public interface IServicioService {
     public void insert (Servicio servicio);
     public List<Servicio> list();
 
+    public void delete(int id);
+
+    public Servicio listId(int id);
+
+    public List<Servicio>findAllByEstado(String estado);
 
 }
